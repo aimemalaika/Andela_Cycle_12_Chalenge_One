@@ -74,6 +74,74 @@ body {
 .w-30 {
     width: 30%;
 }
+
+.mg-25 {
+    margin: 0 25%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
 .w-70 {
     width: 70%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.ptp-5 {
+    padding-top: 5%;
+}
+
+.content-page {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    height: 450px;
+    background-position: center;
+}
+
+mark{
+    background: #8f6c4e;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+
+.mtp-10{
+    margin-top: 10%;
+}
+
+.f-4{
+    font-size: 4em !important;
+}
+
+.buttongetstart {
+    text-decoration: none;
+    font-size: 1.4rem;
+    border: none;
+    color: #263238;
+    box-shadow: none;
+    background: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    outline: none;
+}
+
+.buttongetstart:hover{
+    color: #fff;
+    background: #000;
+}
+
+.hometext mark{
+    text-decoration: none;
+    font-family: helvetica;
+    font-size: 1.5em;
+    color: #fff;
 }
