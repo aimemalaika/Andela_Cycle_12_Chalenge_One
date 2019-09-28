@@ -147,11 +147,13 @@ mark{
 }
 
 .footertext {
-    background: #5e4833;
     text-decoration: none;
     font-family: helvetica;
     font-size: 1em;
     color: #fff;
     font-weight: bold;
     padding: 25px 0;
+}
+.content-footer{
+    background: #5e4833;
 }
