@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Diary</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="body-bg">
+    <section class="header">
+        <div class="container row">
+            <div class="web-name w-30">
+                <a href="index.html"><span class="first-child">My</span><span class="last-child">Diary</span></a>
+            </div>
+            <div class="menu-bar w-70">
+                <ul class="nav-list">
+                    <li><a class="active-link" href="index.html">Aime Malaika's Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100">
+        <div class="container">
+            <div class="w-100 row padprocontent">
+                <div class="w-30 rightborder paddproftab">
+                    <ul class="profmenu">
+                        <li>
+                            <span  class="setpointer" onclick="selecttab();">Change Account Info</span>
+                        </li>
+                        <li>
+                            <span  class="setpointer activate" onclick="selecttab();">Change Account Setting</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-70 profile paddproftab">
+                    <div class="accountdet">
+                        <div class="login-form p-t-1">
+                            <h1 class="text-white text-bold text-uppercase">Change Account Info</h1>
+                            <form method="post">
+                                <div class="w-100">
+                                    <input class="form-input no-outline" placeholder=" " required type="text" name=""
+                                        id="firstname">
+                                    <label class="floating-label profile" for="firstname">First Name</label>
+                                </div>
+                                <div class="w-100 p-t-input">
+                                    <input class="form-input no-outline" placeholder=" " required type="text" name=""
+                                        id="last">
+                                    <label class="floating-label profile" for="last">Last Name</label>
+                                </div>
+                                <div class="w-100 p-t-input">
+                                    <input class="form-input no-outline" required type="email" placeholder=" " name=""
+                                        id="email">
+                                    <label class="floating-label profile" for="email">Email</label>
+                                </div>
+
+                                <div class="w-100 p-t-input middle-btn">
+                                    <button class="btn btn-md btn-bold btn-success btn-rounded">Save</button>
+                                </div>
+
+                            </form>
+                        </div>
+                        <br>
+                        <div class="login-form p-t-1">
+                            <h1 class="text-white text-bold text-uppercase">Change Account Password</h1>
+                            <form method="post">
+                                <div class="w-100 p-t-input">
+                                    <input class="form-input no-outline" required type="password" placeholder=" "
+                                        name="" id="password">
+                                    <label class="floating-label profile" for="password">Old Password</label>
+                                </div>
+                                <div class="w-100 p-t-input">
+                                    <input class="form-input no-outline" required type="password" placeholder=" "
+                                        name="" id="password">
+                                    <label class="floating-label profile" for="password">New Password</label>
+                                </div>
+                                <div class="w-100 p-t-input">
+                                    <input class="form-input no-outline" required type="password" placeholder=" "
+                                        name="" id="password">
+                                    <label class="floating-label profile" for="password">Confirm Password</label>
+                                </div>
+                                <div class="w-100 p-t-input middle-btn">
+                                    <button class="btn btn-md btn-bold btn-success btn-rounded">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="login-form p-t-1 hidden accountsetting">
+                        <h1 class="text-white text-bold text-uppercase">Change Account Setting</h1>
+                        <div class="w-100 totalpost">
+                            <p class="text-one">Total post : <span class="text-one">98</span></p>
+                        </div>
+                        <div class="w-100 totalpost">
+                            <p class="text-one">Reminder <small>(toggle the switch to activate or desactivate
+                                    reminder)</small>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 text-center content-footer relativefooter">
+            <p class="w-50 mg-25 footertext">@aimemalaika</p>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
