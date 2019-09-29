@@ -218,7 +218,7 @@ mark {
 }
 
 .p-t-input {
-    padding-top: 3%;
+    padding-top: 2.5%;
 }
 
 .p-d-inp-log {
@@ -347,6 +347,10 @@ mark {
     font-size: 1em;
 }
 
+#recoverlogin{
+    margin-top: 15%;
+}
+
 .middle-btn {
     text-align: center;
 }
@@ -357,4 +361,7 @@ mark {
  .active-link{
     color: #0af !important;    
     text-decoration: underline !important;
+ }
+ #login{
+    margin-top: 7%;
  }
