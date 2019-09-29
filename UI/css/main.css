@@ -23,19 +23,23 @@ body {
     margin: 0 10%;
 }
 
-.web-name p .first-child {
+.web-name a .first-child {
     font-family: Courier;
     font-weight: 800;
     font-size: 2em;
     text-transform: uppercase;
 }
 
-.web-name p {
+.web-name.w-30 {
+    padding-top: 1%;
+}
+
+.web-name a {
     padding: .5rem;
     margin: 0;
 }
 
-.web-name p .last-child {
+.web-name a .last-child {
     font-family: Helvetica;
     font-weight: 800;
     font-size: 2em;
@@ -98,26 +102,39 @@ body {
 .content-page {
     background-image: url(../images/bg.jpg);
     background-size: cover;
-    height: 450px;
+    /* height: 450px; */
     background-position: center;
 }
 
-mark{
-    background: #8f6c4e;
+.content-page::before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 58px;
+    left: 0;
+    background-color: rgba(110, 110, 110, 0.6);
 }
 
-.text-right{
+mark {
+    background: #fff0;
+}
+
+.text-right {
     text-align: right;
 }
+
 .text-center {
     text-align: center;
 }
 
-.mtp-10{
+.mtp-10 {
     margin-top: 10%;
 }
 
-.f-4{
+.f-4 {
     font-size: 4em !important;
 }
 
@@ -134,12 +151,12 @@ mark{
     outline: none;
 }
 
-.buttongetstart:hover{
+.buttongetstart:hover {
     color: #fff;
     background: #000;
 }
 
-.hometext mark{
+.hometext mark {
     text-decoration: none;
     font-family: helvetica;
     font-size: 1.5em;
@@ -150,10 +167,32 @@ mark{
     text-decoration: none;
     font-family: helvetica;
     font-size: 1em;
-    color: #fff;
+    color: #000;
     font-weight: bold;
     padding: 25px 0;
 }
-.content-footer{
-    background: #5e4833;
+
+.content-footer {
+    position: absolute;
+    left: 0;
+    bottom: 1px;
 }
+
+.body-bg {
+    background-image: url(../images/wood.jpg);
+}
+
+.body-bg::before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.56);
+}
+
+
+/* forms */
