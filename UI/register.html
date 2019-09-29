@@ -13,11 +13,11 @@
     <section class="header">
         <div class="container row">
             <div class="web-name w-30">
-                <a><span class="first-child">My</span><span class="last-child">Diary</span></a>
+                <a href="index.html"><span class="first-child">My</span><span class="last-child">Diary</span></a>
             </div>
             <div class="menu-bar w-70">
                 <ul class="nav-list">
-                    <li><a href="register.html">Sign up</a></li>
+                    <li><a class="active-link" href="register.html">Sign up</a></li>
                     <li><a href="">Sign in</a></li>
                 </ul>
             </div>
@@ -26,13 +26,48 @@
 
     <section class="w-100">
         <div class="container">
-            
-
-
-            <div class="w-100 text-center content-footer">
+            <div id="register" class="login-form p-t-1">
+                <h1 class="text-center text-white text-bold text-uppercase">Register</h1>
+                <form method="post">
+                    <div class="w-50 p-d-inp-log">
+                        <input class="form-input no-outline" placeholder=" " required type="text" name="" id="firstname">
+                        <label class="floating-label" for="firstname">First Name</label>
+                    </div>
+                    <div class="w-50 p-t-input p-d-inp-log">
+                        <input class="form-input no-outline" placeholder=" " required type="text" name="" id="last">
+                        <label class="floating-label" for="last">Last Name</label>
+                    </div>
+                    <div class="w-50 p-t-input p-d-inp-log">
+                        <input class="form-input no-outline" required type="email" placeholder=" " name="" id="email">
+                        <label class="floating-label" for="email">Email</label>
+                    </div>
+                    <div class="w-50 p-t-input p-d-inp-log">
+                        <input class="form-input no-outline" required type="password" placeholder=" " name="" id="password">
+                        <label class="floating-label" for="password">Password</label>
+                    </div>
+                    <div class="w-50 p-t-input p-d-inp-log">
+                        <input class="form-input no-outline" required type="password" placeholder=" " name="" id="password">
+                        <label class="floating-label" for="password">Confirm Password</label>
+                    </div>
+                    <div class="w-50 p-t-input p-d-inp-log">
+                        <label class="checkbox-container">
+                            <input type="checkbox" class="no-outline">
+                            <span class="checkmark no-outline"></span>
+                            <p>I accept terms and conditions</p>
+                        </label>
+                    </div>
+                    <div class="w-100 p-t-input middle-btn">
+                        <button class="btn btn-md btn-bold btn-success btn-rounded" type="submit">Sig In</button>
+                    </div>
+                </form>
+            </div>
+    </section>
+    <section class="w-100">
+        <div class="container">
+            <div class="w-100 text-center content-footer relativefooter">
                 <p class="w-50 mg-25 footertext">@aimemalaika</p>
             </div>
-
+        </div>
     </section>
 
 </body>
