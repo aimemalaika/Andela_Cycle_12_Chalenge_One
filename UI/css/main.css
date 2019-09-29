@@ -6,7 +6,9 @@ body {
 * {
     font-family: helvetica;
 }
-
+a{
+    outline: none;
+}
 .header {
     background-color: #fff;
     border-bottom: 1px solid #90a4ae;
@@ -40,7 +42,12 @@ body {
     margin: 0;
     text-decoration: none;
 }
-
+.web-name a span:hover + .last-child {
+    color: #0af !important;
+}
+.web-name a .last-child:hover {
+    color: #0af !important;
+}
 .web-name a .last-child {
     font-family: Helvetica;
     font-weight: 800;
@@ -72,9 +79,8 @@ body {
     outline: none;
 }
 
-.menu-bar li a:hover {
-    background: #f1f1f6;
-    border-radius: 8px;
+.menu-bar li a:hover{
+    color: #0af !important;
 }
 
 .w-30 {
