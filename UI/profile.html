@@ -17,7 +17,7 @@
             </div>
             <div class="menu-bar w-70">
                 <ul class="nav-list">
-                    <li><a href="index.html">Aime Malaika's Profile</a></li>
+                    <li><a class="active-link" href="index.html">Aime Malaika's Profile</a></li>
                 </ul>
             </div>
         </div>
@@ -28,66 +28,74 @@
             <div class="w-100 row padprocontent">
                 <div class="w-30 rightborder paddproftab">
                     <ul class="profmenu">
-                        <li>Account Info</li>
-                        <li>Settings</li>
+                        <li>
+                            <span  class="setpointer" onclick="selecttab();">Change Account Info</span>
+                        </li>
+                        <li>
+                            <span  class="setpointer activate" onclick="selecttab();">Change Account Setting</span>
+                        </li>
                     </ul>
                 </div>
                 <div class="w-70 profile paddproftab">
-                    <div id="infoed" class="login-form p-t-1">
-                        <h1 class="text-white text-bold text-uppercase">Change Account Info</h1>
-                        <form method="post">
-                            <div class="w-100">
-                                <input class="form-input no-outline" placeholder=" " required type="text" name=""
-                                    id="firstname">
-                                <label class="floating-label profile" for="firstname">First Name</label>
-                            </div>
-                            <div class="w-100 p-t-input">
-                                <input class="form-input no-outline" placeholder=" " required type="text" name=""
-                                    id="last">
-                                <label class="floating-label profile" for="last">Last Name</label>
-                            </div>
-                            <div class="w-100 p-t-input">
-                                <input class="form-input no-outline" required type="email" placeholder=" " name=""
-                                    id="email">
-                                <label class="floating-label profile" for="email">Email</label>
-                            </div>
+                    <div class="accountdet">
+                        <div class="login-form p-t-1">
+                            <h1 class="text-white text-bold text-uppercase">Change Account Info</h1>
+                            <form method="post">
+                                <div class="w-100">
+                                    <input class="form-input no-outline" placeholder=" " required type="text" name=""
+                                        id="firstname">
+                                    <label class="floating-label profile" for="firstname">First Name</label>
+                                </div>
+                                <div class="w-100 p-t-input">
+                                    <input class="form-input no-outline" placeholder=" " required type="text" name=""
+                                        id="last">
+                                    <label class="floating-label profile" for="last">Last Name</label>
+                                </div>
+                                <div class="w-100 p-t-input">
+                                    <input class="form-input no-outline" required type="email" placeholder=" " name=""
+                                        id="email">
+                                    <label class="floating-label profile" for="email">Email</label>
+                                </div>
 
-                            <div class="w-70 p-t-input middle-btn">
-                                <button class="btn btn-md btn-bold btn-success btn-rounded">Save</button>
-                            </div>
+                                <div class="w-100 p-t-input middle-btn">
+                                    <button class="btn btn-md btn-bold btn-success btn-rounded">Save</button>
+                                </div>
 
-                        </form>
+                            </form>
+                        </div>
+                        <br>
+                        <div class="login-form p-t-1">
+                            <h1 class="text-white text-bold text-uppercase">Change Account Password</h1>
+                            <form method="post">
+                                <div class="w-100 p-t-input">
+                                    <input class="form-input no-outline" required type="password" placeholder=" "
+                                        name="" id="password">
+                                    <label class="floating-label profile" for="password">Old Password</label>
+                                </div>
+                                <div class="w-100 p-t-input">
+                                    <input class="form-input no-outline" required type="password" placeholder=" "
+                                        name="" id="password">
+                                    <label class="floating-label profile" for="password">New Password</label>
+                                </div>
+                                <div class="w-100 p-t-input">
+                                    <input class="form-input no-outline" required type="password" placeholder=" "
+                                        name="" id="password">
+                                    <label class="floating-label profile" for="password">Confirm Password</label>
+                                </div>
+                                <div class="w-100 p-t-input middle-btn">
+                                    <button class="btn btn-md btn-bold btn-success btn-rounded">Save</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div id="passworded" class="login-form p-t-1">
-                        <h1 class="text-white text-bold text-uppercase">Change Account Info</h1>
-                        <form method="post">
-                            <div class="w-100 p-t-input">
-                                <input class="form-input no-outline" required type="password" placeholder=" " name=""
-                                    id="password">
-                                <label class="floating-label profile" for="password">Old Password</label>
-                            </div>
-                            <div class="w-100 p-t-input">
-                                <input class="form-input no-outline" required type="password" placeholder=" " name=""
-                                    id="password">
-                                <label class="floating-label profile" for="password">New Password</label>
-                            </div>
-                            <div class="w-100 p-t-input">
-                                <input class="form-input no-outline" required type="password" placeholder=" " name=""
-                                    id="password">
-                                <label class="floating-label profile" for="password">Confirm Password</label>
-                            </div>
-                            <div class="w-70 p-t-input middle-btn">
-                                <button class="btn btn-md btn-bold btn-success btn-rounded">Save</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div id="passworded" class="login-form p-t-1">
-                        <h1 class="text-white text-bold text-uppercase">Account Setting</h1>
+                    <div class="login-form p-t-1 hidden accountsetting">
+                        <h1 class="text-white text-bold text-uppercase">Change Account Setting</h1>
                         <div class="w-100 totalpost">
                             <p class="text-one">Total post : <span class="text-one">98</span></p>
                         </div>
                         <div class="w-100 totalpost">
-                            <p class="text-one">Reminder <small>(toggle the switch to activate or desactivate reminder)</small>
+                            <p class="text-one">Reminder <small>(toggle the switch to activate or desactivate
+                                    reminder)</small>
                                 <label class="switch">
                                     <input type="checkbox">
                                     <span class="slider round"></span>
@@ -102,6 +110,8 @@
             <p class="w-50 mg-25 footertext">@aimemalaika</p>
         </div>
     </section>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
