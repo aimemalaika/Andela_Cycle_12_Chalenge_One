@@ -7,3 +7,4 @@ const selecttab = () => {
         menup[index].classList.toggle("activate");
     }
 }
+
