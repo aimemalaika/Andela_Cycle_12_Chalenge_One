@@ -18,7 +18,7 @@
             <div class="menu-bar w-70">
                 <ul class="nav-list">
                     <li><a class="active-link" href="listdiaries.html">List diaries</a></li>
-                    <li><a href="index.html">Aime Malaika's Profile</a></li>
+                    <li><a href="profile.html">Aime Malaika's Profile</a></li>
                 </ul>
             </div>
         </div>
@@ -29,8 +29,8 @@
             <div class="container">
                 <div class="w-100 row justify-space-between">
                     <div class="w-70">
-                        <input type="text" class="w-100 form-input m-t-b-10" id="searchinput" placeholder="Search for titles.."
-                            title="type in the title of the diary you want to select">
+                        <input type="text" onkeydown="filterResult()" class="w-100 form-input m-t-b-10" id="searchinput"
+                            placeholder="Search for titles.." title="type in the title of the diary you want to select">
                     </div>
                     <div class="w-30 text-center">
                         <button class="btn btn-success rounded m-t-b-30">Add new Story</button>
@@ -46,85 +46,129 @@
                     <th class="w-15">Date created</th>
                     <th class="w-15">Action</th>
                 </tr>
-                <tr class="diary-table-content">
-                    <td title="" class="titleofd">Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred Alfreds
-                        Futterkiste Alfred</td>
-                    <td title="" class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                <tr title="Click on the title to read post" class="diary-table-content">
+                    <td><a class="titleofd" href="google.com">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                            Alfred Alfreds
+                            Futterkiste Alfred</a></td>
+                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
                         Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td title="" class="dateofp">12 january 2019</td>
+                    <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
-                        <a title="" class="table-link" href="">edit</a> 
-                        <button title="" class="table-btn">delete</button>
+                        <a class="table-link" href="">edit</a>
+                        <button class="table-btn">delete</button>
                     </td>
                 </tr>
-                <tr class="diary-table-content">
-                    <td title="" class="titleofd">Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred Alfreds
-                        Futterkiste Alfred</td>
-                    <td title="" class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                <tr title="Click on the title to read post" class="diary-table-content">
+                    <td><a class="titleofd" href="google.com">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                            Alfred Alfreds
+                            Futterkiste Alfred</a></td>
+                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
                         Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td title="" class="dateofp">12 january 2019</td>
+                    <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
-                        <a title="" class="table-link" href="">edit</a> 
-                        <button title="" class="table-btn">delete</button>
+                        <a class="table-link" href="">edit</a>
+                        <button class="table-btn">delete</button>
                     </td>
                 </tr>
-                <tr class="diary-table-content">
-                    <td title="" class="titleofd">Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred Alfreds
-                        Futterkiste Alfred</td>
-                    <td title="" class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                <tr title="Click on the title to read post" class="diary-table-content">
+                    <td><a class="titleofd" href="google.com">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                            Alfred Alfreds
+                            Futterkiste Alfred</a></td>
+                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
                         Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td title="" class="dateofp">12 january 2019</td>
+                    <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
-                        <a title="" class="table-link" href="">edit</a> 
-                        <button title="" class="table-btn">delete</button>
+                        <a class="table-link" href="">edit</a>
+                        <button class="table-btn">delete</button>
                     </td>
                 </tr>
-                <tr class="diary-table-content">
-                    <td title="" class="titleofd">Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred Alfreds
-                        Futterkiste Alfred</td>
-                    <td title="" class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                <tr title="Click on the title to read post" class="diary-table-content">
+                    <td><a class="titleofd" href="google.com">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                            Alfred Alfreds
+                            Futterkiste Alfred</a></td>
+                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
                         Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td title="" class="dateofp">12 january 2019</td>
+                    <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
-                        <a title="" class="table-link" href="">edit</a> 
-                        <button title="" class="table-btn">delete</button>
+                        <a class="table-link" href="">edit</a>
+                        <button class="table-btn">delete</button>
                     </td>
                 </tr>
-                <tr class="diary-table-content">
-                    <td title="" class="titleofd">Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred Alfreds
-                        Futterkiste Alfred</td>
-                    <td title="" class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                <tr title="Click on the title to read post" class="diary-table-content">
+                    <td><a class="titleofd" href="google.com">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                            Alfred Alfreds
+                            Futterkiste Alfred</a></td>
+                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
                         Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td title="" class="dateofp">12 january 2019</td>
+                    <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
-                        <a title="" class="table-link" href="">edit</a> 
-                        <button title="" class="table-btn">delete</button>
+                        <a class="table-link" href="">edit</a>
+                        <button class="table-btn">delete</button>
                     </td>
                 </tr>
-                <tr class="diary-table-content">
-                    <td title="" class="titleofd">Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred Alfreds
-                        Futterkiste Alfred</td>
-                    <td title="" class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                <tr title="Click on the title to read post" class="diary-table-content">
+                    <td><a class="titleofd" href="google.com">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                            Alfred Alfreds
+                            Futterkiste Alfred</a></td>
+                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
                         Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td title="" class="dateofp">12 january 2019</td>
+                    <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
-                        <a title="" class="table-link" href="">edit</a> 
-                        <button title="" class="table-btn">delete</button>
+                        <a class="table-link" href="">edit</a>
+                        <button class="table-btn">delete</button>
                     </td>
                 </tr>
-                <tr class="diary-table-content">
-                    <td title="" class="titleofd">Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred Alfreds
-                        Futterkiste Alfred</td>
-                    <td title="" class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                <tr title="Click on the title to read post" class="diary-table-content">
+                    <td><a class="titleofd" href="google.com">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                            Alfred Alfreds
+                            Futterkiste Alfred</a></td>
+                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
                         Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td title="" class="dateofp">12 january 2019</td>
+                    <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
-                        <a title="" class="table-link" href="">edit</a> 
-                        <button title="" class="table-btn">delete</button>
+                        <a class="table-link" href="">edit</a>
+                        <button class="table-btn">delete</button>
                     </td>
                 </tr>
+                <tr title="Click on the title to read post" class="diary-table-content">
+                    <td><a class="titleofd" href="google.com">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                            Alfred Alfreds
+                            Futterkiste Alfred</a></td>
+                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                    <td class="dateofp">12 january 2019</td>
+                    <td class="row justify-space-between">
+                        <a class="table-link" href="">edit</a>
+                        <button class="table-btn">delete</button>
+                    </td>
+                </tr>
+                <tr title="Click on the title to read post" class="diary-table-content">
+                    <td><a class="titleofd" href="google.com">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                            Alfred Alfreds
+                            Futterkiste Alfred</a></td>
+                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                    <td class="dateofp">12 january 2019</td>
+                    <td class="row justify-space-between">
+                        <a class="table-link" href="">edit</a>
+                        <button class="table-btn">delete</button>
+                    </td>
+                </tr>
+                <tr title="Click on the title to read post" class="diary-table-content">
+                    <td><a class="titleofd" href="google.com">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                            Alfred Alfreds
+                            Futterkiste Alfred</a></td>
+                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                    <td class="dateofp">12 january 2019</td>
+                    <td class="row justify-space-between">
+                        <a class="table-link" href="">edit</a>
+                        <button class="table-btn">delete</button>
+                    </td>
+                </tr>
+
             </table>
-            <div class="w-100 text-center m-t-b-10">
+            <div class="w-100 text-center m-t-b-30">
                 <a class="btn pagination" href="">Prev</a>
                 <span class="textbtweenpd">12 / 30</span>
                 <a class="btn pagination" href="">Next</a>
@@ -141,12 +185,12 @@
         var content = document.querySelectorAll('.contentofd');
         var dateofp = document.querySelectorAll('.dateofp');
 
-        const wrapmytext = (classtowrap,name) => {
+        const wrapmytext = (classtowrap, name) => {
             console.log(classtowrap);
             var lengthstr = 0;
             switch (name) {
                 case 'title':
-                    lengthstr = 42 
+                    lengthstr = 42
                     break;
                 case 'content':
                     lengthstr = 59
@@ -157,17 +201,17 @@
             }
 
             console.log(lengthstr);
-            
-            for(var i = 0; i< classtowrap.length;i++){
+
+            for (var i = 0; i < classtowrap.length; i++) {
                 if (classtowrap[i].textContent.length > lengthstr) {
                     classtowrap[i].textContent = classtowrap[i].textContent.substr(0, lengthstr) + '...';
                 }
             }
         }
 
-        wrapmytext(title,'title');
-        wrapmytext(content,'content');
-        wrapmytext(dateofp,'dateofp');
+        wrapmytext(title, 'title');
+        wrapmytext(content, 'content');
+        wrapmytext(dateofp, 'dateofp');
     </script>
 </body>
 
