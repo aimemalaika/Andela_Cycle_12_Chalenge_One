@@ -26,3 +26,8 @@ const filterResult = () => {
     }
   }
 }
+
+const togglealertdelete = () => {
+  document.querySelector('#pop-up-delete').classList.toggle('hidden');
+  document.querySelector('html').classList.toggle('noscroll');
+}

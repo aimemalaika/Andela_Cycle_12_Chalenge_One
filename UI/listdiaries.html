@@ -56,7 +56,7 @@
                     <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
                         <a class="table-link" href="editdiary.html">edit</a>
-                        <button class="table-btn">delete</button>
+                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
                     </td>
                 </tr>
                 <tr title="Click on the title to read post" class="diary-table-content">
@@ -68,7 +68,7 @@
                     <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
                         <a class="table-link" href="editdiary.html">edit</a>
-                        <button class="table-btn">delete</button>
+                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
                     </td>
                 </tr>
                 <tr title="Click on the title to read post" class="diary-table-content">
@@ -80,7 +80,7 @@
                     <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
                         <a class="table-link" href="editdiary.html">edit</a>
-                        <button class="table-btn">delete</button>
+                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
                     </td>
                 </tr>
                 <tr title="Click on the title to read post" class="diary-table-content">
@@ -92,7 +92,7 @@
                     <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
                         <a class="table-link" href="editdiary.html">edit</a>
-                        <button class="table-btn">delete</button>
+                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
                     </td>
                 </tr>
                 <tr title="Click on the title to read post" class="diary-table-content">
@@ -104,7 +104,7 @@
                     <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
                         <a class="table-link" href="editdiary.html">edit</a>
-                        <button class="table-btn">delete</button>
+                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
                     </td>
                 </tr>
                 <tr title="Click on the title to read post" class="diary-table-content">
@@ -116,7 +116,7 @@
                     <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
                         <a class="table-link" href="editdiary.html">edit</a>
-                        <button class="table-btn">delete</button>
+                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
                     </td>
                 </tr>
                 <tr title="Click on the title to read post" class="diary-table-content">
@@ -128,7 +128,7 @@
                     <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
                         <a class="table-link" href="editdiary.html">edit</a>
-                        <button class="table-btn">delete</button>
+                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
                     </td>
                 </tr>
                 <tr title="Click on the title to read post" class="diary-table-content">
@@ -140,7 +140,7 @@
                     <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
                         <a class="table-link" href="editdiary.html">edit</a>
-                        <button class="table-btn">delete</button>
+                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
                     </td>
                 </tr>
                 <tr title="Click on the title to read post" class="diary-table-content">
@@ -152,7 +152,7 @@
                     <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
                         <a class="table-link" href="editdiary.html">edit</a>
-                        <button class="table-btn">delete</button>
+                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
                     </td>
                 </tr>
                 <tr title="Click on the title to read post" class="diary-table-content">
@@ -164,7 +164,7 @@
                     <td class="dateofp">12 january 2019</td>
                     <td class="row justify-space-between">
                         <a class="table-link" href="editdiary.html">edit</a>
-                        <button class="table-btn">delete</button>
+                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
                     </td>
                 </tr>
 
@@ -177,6 +177,16 @@
         </div>
         <div class="w-100 text-center content-footer relativefooter">
             <p class="w-50 mg-25 footertext">@aimemalaika</p>
+        </div>
+    </section>
+    <section class="w-100 pop-up hidden" id="pop-up-delete">
+        <div class="w-50 text-center mg-25 message">
+            <h3>Do you wan't to delete</h3>
+            <p>My First day in kampala ?</p>
+            <div class="w-50 row justify-space-between m-t-b-30">
+                <button type="reset" class="btn btn-info" onclick="togglealertdelete()">No</button><button
+                    class="btn btn-danger">Yes</button>
+            </div>
         </div>
     </section>
 

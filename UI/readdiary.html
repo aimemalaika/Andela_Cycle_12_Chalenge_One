@@ -112,13 +112,24 @@
                     Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                 </p>
                 <div class="w-100 row justify-space-between">
-                    <a class="btn btn-info" href="newdiary.html">Edit</a><button class="btn btn-danger">Delete</button>
+                    <a class="btn btn-info" href="editdiary.html">Edit</a><button onclick="togglealertdelete()" class="btn btn-danger">Delete</button>
                 </div>
             </div>
         </div>
 
         <div class="w-100 text-center content-footer relativefooter">
             <p class="w-50 mg-25 footertext">@aimemalaika</p>
+        </div>
+    </section>
+
+    <section class="w-100 pop-up hidden" id="pop-up-delete">
+        <div class="w-50 text-center mg-25 message">
+            <h3>Do you wan't to delete</h3>
+            <p>My First day in kampala ?</p>
+            <div class="w-50 row justify-space-between m-t-b-30">
+                <button type="reset" class="btn btn-info" onclick="togglealertdelete()">No</button><button
+                    class="btn btn-danger">Yes</button>
+            </div>
         </div>
     </section>
 

@@ -373,7 +373,7 @@ mark {
     text-decoration: none;
 }
 .btn-danger {
-    background: #f86133;
+    background: orangered;
 }
 .btn-success:hover {
     background: #8d5508;
@@ -653,4 +653,28 @@ input:checked+.slider:before {
     overflow-y: scroll;
     text-align: justify;
     color: #fff;
+}
+.pop-up{
+    background: #fff3;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+}
+.pop-up .message{
+    margin-top: 15%;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+}
+.message h3{
+    color: orangered;
+}
+.message p{
+    color: black;
+    font-weight: bold;
+}
+.noscroll{
+    height: 100%; 
+    overflow: hidden;
 }
