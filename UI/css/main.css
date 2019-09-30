@@ -367,7 +367,13 @@ mark {
 .btn-success {
     background: #594325;
 }
-
+.btn-info {
+    background: #36b8d8;
+    text-decoration: none;
+}
+.btn-danger {
+    background: #f86133;
+}
 .btn-success:hover {
     background: #8d5508;
 }
@@ -378,6 +384,10 @@ mark {
 
 .btn-md {
     font-size: 1em;
+}
+
+.marg-l-r-15{
+    margin: 0 15%;
 }
 
 #recoverlogin {
@@ -610,4 +620,26 @@ input:checked+.slider:before {
 .textbtweenpd{
     color: #fff;
     padding: 0 30px;
+}
+.contentbox{
+    background: #fff;
+    padding: 15px;
+}
+.contentbox h3{
+    color: #594325;
+    text-align: center;
+    font-size: 1.4em;
+}
+.separator{
+    background: #0078ff;
+    height: 1px;
+}
+.contentbox p{
+    font-size: 1.2em;
+    line-height: 1.7;
+    border: 3px solid gray;
+    padding: 10px 40px;
+    height: 500px;
+    overflow-y: scroll;
+    text-align: justify
 }
