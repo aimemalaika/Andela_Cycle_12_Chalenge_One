@@ -37,10 +37,81 @@
                     <th class="w-15">Action</th>
                 </tr>
                 <tr class="diary-table-content">
-                    <td class="titleofd">Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred</td>
-                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td class="dateofp">12 january 2019</td>
-                    <td class="row justify-space-between"><a class="table-link" href="">edit</a> <button class="table-btn">delete</button></td>
+                    <td title="" class="titleofd">Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred Alfreds
+                        Futterkiste Alfred</td>
+                    <td title="" class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                    <td title="" class="dateofp">12 january 2019</td>
+                    <td class="row justify-space-between">
+                        <a title="" class="table-link" href="">edit</a> 
+                        <button title="" class="table-btn">delete</button>
+                    </td>
+                </tr>
+                <tr class="diary-table-content">
+                    <td title="" class="titleofd">Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred Alfreds
+                        Futterkiste Alfred</td>
+                    <td title="" class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                    <td title="" class="dateofp">12 january 2019</td>
+                    <td class="row justify-space-between">
+                        <a title="" class="table-link" href="">edit</a> 
+                        <button title="" class="table-btn">delete</button>
+                    </td>
+                </tr>
+                <tr class="diary-table-content">
+                    <td title="" class="titleofd">Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred Alfreds
+                        Futterkiste Alfred</td>
+                    <td title="" class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                    <td title="" class="dateofp">12 january 2019</td>
+                    <td class="row justify-space-between">
+                        <a title="" class="table-link" href="">edit</a> 
+                        <button title="" class="table-btn">delete</button>
+                    </td>
+                </tr>
+                <tr class="diary-table-content">
+                    <td title="" class="titleofd">Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred Alfreds
+                        Futterkiste Alfred</td>
+                    <td title="" class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                    <td title="" class="dateofp">12 january 2019</td>
+                    <td class="row justify-space-between">
+                        <a title="" class="table-link" href="">edit</a> 
+                        <button title="" class="table-btn">delete</button>
+                    </td>
+                </tr>
+                <tr class="diary-table-content">
+                    <td title="" class="titleofd">Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred Alfreds
+                        Futterkiste Alfred</td>
+                    <td title="" class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                    <td title="" class="dateofp">12 january 2019</td>
+                    <td class="row justify-space-between">
+                        <a title="" class="table-link" href="">edit</a> 
+                        <button title="" class="table-btn">delete</button>
+                    </td>
+                </tr>
+                <tr class="diary-table-content">
+                    <td title="" class="titleofd">Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred Alfreds
+                        Futterkiste Alfred</td>
+                    <td title="" class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                    <td title="" class="dateofp">12 january 2019</td>
+                    <td class="row justify-space-between">
+                        <a title="" class="table-link" href="">edit</a> 
+                        <button title="" class="table-btn">delete</button>
+                    </td>
+                </tr>
+                <tr class="diary-table-content">
+                    <td title="" class="titleofd">Alfreds Futterkiste Alfred Alfreds Futterkiste Alfred Alfreds
+                        Futterkiste Alfred</td>
+                    <td title="" class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                    <td title="" class="dateofp">12 january 2019</td>
+                    <td class="row justify-space-between">
+                        <a title="" class="table-link" href="">edit</a> 
+                        <button title="" class="table-btn">delete</button>
+                    </td>
                 </tr>
             </table>
             <div class="w-100 text-center m-t-b-10">
@@ -54,18 +125,37 @@
 
     <script src="js/main.js"></script>
     <script>
-        var title = document.querySelector('.titleofd');
-        var content = document.querySelector('.contentofd');
-        var dateofp =document.querySelector('.dateofp')
-        if(title.textContent.length > 42){
-            title.textContent = title.textContent.substr(0,42)+'...';
+        var title = document.querySelectorAll('.titleofd');
+        var content = document.querySelectorAll('.contentofd');
+        var dateofp = document.querySelectorAll('.dateofp');
+
+        const wrapmytext = (classtowrap,name) => {
+            console.log(classtowrap);
+            var lengthstr = 0;
+            switch (name) {
+                case 'title':
+                    lengthstr = 42 
+                    break;
+                case 'content':
+                    lengthstr = 59
+                    break;
+                case 'dateofp':
+                    lengthstr = 15
+                    break;
+            }
+
+            console.log(lengthstr);
+            
+            for(var i = 0; i< classtowrap.length;i++){
+                if (classtowrap[i].textContent.length > lengthstr) {
+                    classtowrap[i].textContent = classtowrap[i].textContent.substr(0, lengthstr) + '...';
+                }
+            }
         }
-        if(content.textContent.length > 59){
-            content.textContent = content.textContent.substr(0,59)+'...';
-        }
-        if(dateofp.textContent.length > 15){
-            dateofp.textContent = dateofp.textContent.substr(0,16)+'...';
-        }
+
+        wrapmytext(title,'title');
+        wrapmytext(content,'content');
+        wrapmytext(dateofp,'dateofp');
     </script>
 </body>
 
