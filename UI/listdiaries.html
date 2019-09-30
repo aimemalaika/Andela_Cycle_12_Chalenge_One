@@ -25,10 +25,20 @@
     </section>
 
     <section class="w-100">
+        <div class="w-100 head-serch">
+            <div class="container">
+                <div class="w-100 row justify-space-between">
+                    <div class="w-70">
+                        <input type="text" class="w-100 form-input m-t-b-10" id="searchinput" placeholder="Search for titles.."
+                            title="type in the title of the diary you want to select">
+                    </div>
+                    <div class="w-30 text-center">
+                        <button class="btn btn-success rounded m-t-b-30">Add new Story</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
-            <input type="text" class="w-100 form-input m-t-b-10" id="searchinput" placeholder="Search for titles.."
-                title="type in the title of the diary you want to select">
-
             <table id="diary-table" class="w-100">
                 <tr class="header-table">
                     <th class="w-30">Title</th>
@@ -115,7 +125,9 @@
                 </tr>
             </table>
             <div class="w-100 text-center m-t-b-10">
-                <a class="btn pagination" href="">Prev</a><a class="btn pagination" href="">Next</a>
+                <a class="btn pagination" href="">Prev</a>
+                <span class="textbtweenpd">12 / 30</span>
+                <a class="btn pagination" href="">Next</a>
             </div>
         </div>
         <div class="w-100 text-center content-footer relativefooter">

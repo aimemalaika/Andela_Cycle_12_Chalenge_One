@@ -533,10 +533,15 @@ input:checked+.slider:before {
 }
 
 .pagination {
-    background: #fff;
+    background: #848484;
     text-decoration: none;
-    color: #000 !important;
+    color: #fff !important;
     margin: 10px;
+    border-radius: 0;
+}
+
+.pagination:hover {
+    background: #bababa;
 }
 
 .diary-title,
@@ -588,4 +593,14 @@ td{
 }
 .table-btn:hover{
     color: #f98e8e;
+}
+.m-t-b-30{
+    margin: 30px 0;
+}
+.w-100.head-serch {
+    background: #393939;
+}
+.textbtweenpd{
+    color: #fff;
+    padding: 0 30px;
 }
