@@ -84,10 +84,28 @@ a {
     outline: none;
 }
 
+.wrap-content {
+    flex-wrap: wrap;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.m-t-b-10 {
+    margin: 10px 0;
+}
+
 .menu-bar li a:hover {
     color: #0af !important;
 }
 
+.w-25 {
+    width: 25%;
+}
+.w-15 {
+    width: 15%;
+}
 .w-30 {
     width: 30%;
 }
@@ -95,7 +113,9 @@ a {
 .mg-25 {
     margin: 0 25%;
 }
-
+.w-40{
+    width: 40%;
+}
 .w-50 {
     width: 50%;
 }
@@ -377,6 +397,7 @@ mark {
     color: #0af !important;
     text-decoration: underline !important;
 }
+
 .activate {
     color: #a7a7a7 !important;
     text-decoration: underline !important;
@@ -401,6 +422,7 @@ mark {
 .paddproftab {
     padding: 0 5%;
 }
+
 .profmenu li {
     color: #2ea7e0;
     font-size: 1.2rem;
@@ -409,9 +431,10 @@ mark {
     padding-bottom: 20%;
 }
 
-.profmenu li span:hover{
+.profmenu li span:hover {
     color: #09ada7;
 }
+
 .totalpost {
     width: 100%;
     border: 1px solid #fff;
@@ -500,9 +523,91 @@ input:checked+.slider:before {
 .hidden {
     display: none;
 }
-.setpointer{
+
+.setpointer {
     cursor: pointer;
 }
-.p-t-input-prof{
+
+.p-t-input-prof {
     padding-top: 5%;
+}
+
+.pagination {
+    background: #848484;
+    text-decoration: none;
+    color: #fff !important;
+    margin: 10px;
+    border-radius: 0;
+}
+
+.pagination:hover {
+    background: #bababa;
+}
+
+.diary-title,
+.diary-content {
+    color: #fff;
+}
+
+.diary a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+#diary-table {
+    border-collapse: collapse;
+}
+
+.header-table {
+    text-align: left;
+    color: #fff;
+    font-weight: 400;
+    border-bottom: 2px solid #fff;
+}
+.header-table th{
+    padding: 15px;
+}
+.diary-table-content td{
+    padding: 15px;
+    color: #90a4ae;
+}
+.diary-table-content:hover{
+    background: #0000004d;
+}
+.diary-table-content td a{
+    color: #90a4ae;
+    text-decoration: none;
+}
+.diary-table-content td a:hover{
+    text-decoration: underline;
+}
+.table-btn{
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+}
+.table-link{
+    color: #09ada7 !important;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 20px;
+}
+.table-link:hover{
+    color: #58beff;
+}
+.table-btn:hover{
+    color: #f98e8e;
+}
+.m-t-b-30{
+    margin: 30px 0;
+}
+.w-100.head-serch {
+    background: #393939;
+}
+.textbtweenpd{
+    color: #fff;
+    padding: 0 30px;
 }
