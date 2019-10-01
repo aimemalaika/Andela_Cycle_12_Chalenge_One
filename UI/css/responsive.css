@@ -28,8 +28,57 @@
         padding-top: 25%;
     }
 }
+@media screen and (max-width: 624px) {
+    .form-input {
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    .form-input {
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    .form-input {
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 312px) {
+    .form-input {
+        width: 95%;
+    }
+}
 
 @media screen and (max-width: 724px) {
+    .p-d-inp-log-small{
+        margin: 0;
+        width: 100%;
+        padding-top: 15%;
+    }
+    .content-footer {
+        position: relative;
+    }
+    #login {
+        margin-top: 37%;
+    }
+    .floating-label {
+        left: 10%;
+    }
+    .form-input:focus+.floating-label {
+        margin-top: -5%;
+    }
+    
+    .form-input:focus+.floating-label,
+    .form-input:valid+.floating-label,
+    .form-input:not(:placeholder-shown)+.floating-label {
+        margin-top: -5%;
+    }
+    .nenu-toogle{
+        display: block;
+    }
     .menu-bar {
         display: none;
     }

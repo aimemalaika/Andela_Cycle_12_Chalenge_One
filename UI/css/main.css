@@ -260,7 +260,7 @@ mark {
 }
 
 .form-input {
-    width: 98%;
+    width: 96%;
     border: none;
     border-bottom-width: medium;
     border-bottom-style: none;
@@ -303,7 +303,6 @@ mark {
 .form-input:not(:placeholder-shown):invalid {
     box-shadow: none;
     border-bottom: 1px solid #ff3600;
-
 }
 
 .checkbox-container input {
@@ -537,6 +536,7 @@ input:checked+.slider:before {
 
 .hidden {
     display: none;
+    transition: all 0.5s ease;
 }
 
 .setpointer {
@@ -692,6 +692,7 @@ input:checked+.slider:before {
 .nenu-toogle{
     float: right;
     cursor: pointer;
+    display: none;
 }
 .menu-bar-phone .nav-list{
     float: none;
