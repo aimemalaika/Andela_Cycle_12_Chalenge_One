@@ -56,12 +56,25 @@
     .p-d-inp-log-small{
         margin: 0;
         width: 100%;
+        padding-top: 15%;
+    }
+    .content-footer {
+        position: relative;
     }
     #login {
-        margin-top: 50%;
+        margin-top: 37%;
     }
     .floating-label {
         left: 10%;
+    }
+    .form-input:focus+.floating-label {
+        margin-top: -5%;
+    }
+    
+    .form-input:focus+.floating-label,
+    .form-input:valid+.floating-label,
+    .form-input:not(:placeholder-shown)+.floating-label {
+        margin-top: -5%;
     }
     .nenu-toogle{
         display: block;
