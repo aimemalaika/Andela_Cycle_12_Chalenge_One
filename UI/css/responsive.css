@@ -46,6 +46,28 @@
     }
 }
 
+@media screen and (max-width: 428px) {
+    .textbtweenpd {
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 358px) {
+    .pagination {
+        margin: 2px;    
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+   .w-hide{
+       display: none;
+   }
+   .w-expend{
+    width: 100%;
+}
+}
+
+
 @media screen and (max-width: 312px) {
     .form-input {
         width: 95%;
@@ -53,6 +75,22 @@
 }
 
 @media screen and (max-width: 724px) {
+    #pop-up-delete .message {
+        width: 90%;
+        margin: 0;
+    }
+    #pop-up-delete{
+        top: 20%;
+    }
+    .toenlarge{
+        width: 100%;
+    }
+    .toenlarge .btn{
+        padding: 5px 10px;
+    }
+    .overflowtable{
+        overflow-x: auto;
+    }
     .contentbox-black {
         padding: 20px 8px !important;
     }

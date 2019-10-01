@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Diary</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body class="body-bg">
@@ -22,6 +23,23 @@
                     <li><a href="profile.html">Aime Malaika's Profile</a></li>
                 </ul>
             </div>
+            <div class="nenu-toogle" onclick="togglemenu()">
+                <div class="barsmenu"></div>
+                <div class="barsmenu"></div>
+                <div class="barsmenu"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="phone-menu" class="phone-menu hidden">
+        <div class="container">
+            <div class="menu-bar-phone w-100">
+                <ul class="nav-list">
+                    <li><a href="newdiary.html">New diary</a></li>
+                    <li><a class="active-link" href="listdiaries.html">List diaries</a></li>
+                    <li><a href="profile.html">Aime Malaika's Profile</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -29,146 +47,148 @@
         <div class="w-100 head-serch">
             <div class="container">
                 <div class="w-100 row justify-space-between m-t-b-30">
-                    <div class="w-70">
-                        <input type="text" onkeydown="filterResult()" class="w-100 form-input m-t-b-10" id="searchinput"
+                    <div class="w-70 w-expend">
+                        <input type="text" onkeydown="filterResult()" class="w-100 form-input no-outline m-t-b-10" id="searchinput"
                             placeholder="Search for titles.." title="type in the title of the diary you want to select">
                     </div>
-                    <div class="w-30 text-center">
+                    <div class="w-30 text-center w-hide">
                         <p><a href="newdiary.html" class="btn btn-success rounded"> New Diary</a></p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
-            <table id="diary-table" class="w-100">
-                <tr class="header-table">
-                    <th class="w-30">Title</th>
-                    <th class="w-40">Content</th>
-                    <th class="w-15">Date created</th>
-                    <th class="w-15">Action</th>
-                </tr>
-                <tr title="Click on the title to read post" class="diary-table-content">
-                    <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
-                            Alfred Alfreds
-                            Futterkiste Alfred</a></td>
-                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
-                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td class="dateofp">12 january 2019</td>
-                    <td class="row justify-space-between">
-                        <a class="table-link" href="editdiary.html">edit</a>
-                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
-                    </td>
-                </tr>
-                <tr title="Click on the title to read post" class="diary-table-content">
-                    <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
-                            Alfred Alfreds
-                            Futterkiste Alfred</a></td>
-                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
-                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td class="dateofp">12 january 2019</td>
-                    <td class="row justify-space-between">
-                        <a class="table-link" href="editdiary.html">edit</a>
-                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
-                    </td>
-                </tr>
-                <tr title="Click on the title to read post" class="diary-table-content">
-                    <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
-                            Alfred Alfreds
-                            Futterkiste Alfred</a></td>
-                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
-                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td class="dateofp">12 january 2019</td>
-                    <td class="row justify-space-between">
-                        <a class="table-link" href="editdiary.html">edit</a>
-                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
-                    </td>
-                </tr>
-                <tr title="Click on the title to read post" class="diary-table-content">
-                    <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
-                            Alfred Alfreds
-                            Futterkiste Alfred</a></td>
-                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
-                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td class="dateofp">12 january 2019</td>
-                    <td class="row justify-space-between">
-                        <a class="table-link" href="editdiary.html">edit</a>
-                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
-                    </td>
-                </tr>
-                <tr title="Click on the title to read post" class="diary-table-content">
-                    <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
-                            Alfred Alfreds
-                            Futterkiste Alfred</a></td>
-                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
-                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td class="dateofp">12 january 2019</td>
-                    <td class="row justify-space-between">
-                        <a class="table-link" href="editdiary.html">edit</a>
-                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
-                    </td>
-                </tr>
-                <tr title="Click on the title to read post" class="diary-table-content">
-                    <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
-                            Alfred Alfreds
-                            Futterkiste Alfred</a></td>
-                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
-                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td class="dateofp">12 january 2019</td>
-                    <td class="row justify-space-between">
-                        <a class="table-link" href="editdiary.html">edit</a>
-                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
-                    </td>
-                </tr>
-                <tr title="Click on the title to read post" class="diary-table-content">
-                    <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
-                            Alfred Alfreds
-                            Futterkiste Alfred</a></td>
-                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
-                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td class="dateofp">12 january 2019</td>
-                    <td class="row justify-space-between">
-                        <a class="table-link" href="editdiary.html">edit</a>
-                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
-                    </td>
-                </tr>
-                <tr title="Click on the title to read post" class="diary-table-content">
-                    <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
-                            Alfred Alfreds
-                            Futterkiste Alfred</a></td>
-                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
-                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td class="dateofp">12 january 2019</td>
-                    <td class="row justify-space-between">
-                        <a class="table-link" href="editdiary.html">edit</a>
-                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
-                    </td>
-                </tr>
-                <tr title="Click on the title to read post" class="diary-table-content">
-                    <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
-                            Alfred Alfreds
-                            Futterkiste Alfred</a></td>
-                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
-                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td class="dateofp">12 january 2019</td>
-                    <td class="row justify-space-between">
-                        <a class="table-link" href="editdiary.html">edit</a>
-                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
-                    </td>
-                </tr>
-                <tr title="Click on the title to read post" class="diary-table-content">
-                    <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
-                            Alfred Alfreds
-                            Futterkiste Alfred</a></td>
-                    <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
-                        Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
-                    <td class="dateofp">12 january 2019</td>
-                    <td class="row justify-space-between">
-                        <a class="table-link" href="editdiary.html">edit</a>
-                        <button onclick="togglealertdelete()" class="table-btn">delete</button>
-                    </td>
-                </tr>
+            <div class="overflowtable">
+                <table id="diary-table" class="w-100">
+                    <tr class="header-table">
+                        <th class="w-30">Title</th>
+                        <th class="w-40">Content</th>
+                        <th class="w-15">Date created</th>
+                        <th class="w-15">Action</th>
+                    </tr>
+                    <tr title="Click on the title to read post" class="diary-table-content">
+                        <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                                Alfred Alfreds
+                                Futterkiste Alfred</a></td>
+                        <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                            Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                        <td class="dateofp">12 january 2019</td>
+                        <td class="row justify-space-between">
+                            <a class="table-link" href="editdiary.html">edit</a>
+                            <button onclick="togglealertdelete()" class="table-btn">delete</button>
+                        </td>
+                    </tr>
+                    <tr title="Click on the title to read post" class="diary-table-content">
+                        <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                                Alfred Alfreds
+                                Futterkiste Alfred</a></td>
+                        <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                            Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                        <td class="dateofp">12 january 2019</td>
+                        <td class="row justify-space-between">
+                            <a class="table-link" href="editdiary.html">edit</a>
+                            <button onclick="togglealertdelete()" class="table-btn">delete</button>
+                        </td>
+                    </tr>
+                    <tr title="Click on the title to read post" class="diary-table-content">
+                        <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                                Alfred Alfreds
+                                Futterkiste Alfred</a></td>
+                        <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                            Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                        <td class="dateofp">12 january 2019</td>
+                        <td class="row justify-space-between">
+                            <a class="table-link" href="editdiary.html">edit</a>
+                            <button onclick="togglealertdelete()" class="table-btn">delete</button>
+                        </td>
+                    </tr>
+                    <tr title="Click on the title to read post" class="diary-table-content">
+                        <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                                Alfred Alfreds
+                                Futterkiste Alfred</a></td>
+                        <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                            Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                        <td class="dateofp">12 january 2019</td>
+                        <td class="row justify-space-between">
+                            <a class="table-link" href="editdiary.html">edit</a>
+                            <button onclick="togglealertdelete()" class="table-btn">delete</button>
+                        </td>
+                    </tr>
+                    <tr title="Click on the title to read post" class="diary-table-content">
+                        <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                                Alfred Alfreds
+                                Futterkiste Alfred</a></td>
+                        <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                            Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                        <td class="dateofp">12 january 2019</td>
+                        <td class="row justify-space-between">
+                            <a class="table-link" href="editdiary.html">edit</a>
+                            <button onclick="togglealertdelete()" class="table-btn">delete</button>
+                        </td>
+                    </tr>
+                    <tr title="Click on the title to read post" class="diary-table-content">
+                        <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                                Alfred Alfreds
+                                Futterkiste Alfred</a></td>
+                        <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                            Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                        <td class="dateofp">12 january 2019</td>
+                        <td class="row justify-space-between">
+                            <a class="table-link" href="editdiary.html">edit</a>
+                            <button onclick="togglealertdelete()" class="table-btn">delete</button>
+                        </td>
+                    </tr>
+                    <tr title="Click on the title to read post" class="diary-table-content">
+                        <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                                Alfred Alfreds
+                                Futterkiste Alfred</a></td>
+                        <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                            Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                        <td class="dateofp">12 january 2019</td>
+                        <td class="row justify-space-between">
+                            <a class="table-link" href="editdiary.html">edit</a>
+                            <button onclick="togglealertdelete()" class="table-btn">delete</button>
+                        </td>
+                    </tr>
+                    <tr title="Click on the title to read post" class="diary-table-content">
+                        <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                                Alfred Alfreds
+                                Futterkiste Alfred</a></td>
+                        <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                            Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                        <td class="dateofp">12 january 2019</td>
+                        <td class="row justify-space-between">
+                            <a class="table-link" href="editdiary.html">edit</a>
+                            <button onclick="togglealertdelete()" class="table-btn">delete</button>
+                        </td>
+                    </tr>
+                    <tr title="Click on the title to read post" class="diary-table-content">
+                        <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                                Alfred Alfreds
+                                Futterkiste Alfred</a></td>
+                        <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                            Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                        <td class="dateofp">12 january 2019</td>
+                        <td class="row justify-space-between">
+                            <a class="table-link" href="editdiary.html">edit</a>
+                            <button onclick="togglealertdelete()" class="table-btn">delete</button>
+                        </td>
+                    </tr>
+                    <tr title="Click on the title to read post" class="diary-table-content">
+                        <td><a class="titleofd" href="readdiary.html">Alfreds Futterkiste Alfred Alfreds Futterkiste
+                                Alfred Alfreds
+                                Futterkiste Alfred</a></td>
+                        <td class="contentofd">Alfreds Futterkiste Alfreds Futterkiste Alfreds Futterkiste Alfreds
+                            Futterkiste Alfreds Futterkiste Alfreds Futterkiste</td>
+                        <td class="dateofp">12 january 2019</td>
+                        <td class="row justify-space-between">
+                            <a class="table-link" href="editdiary.html">edit</a>
+                            <button onclick="togglealertdelete()" class="table-btn">delete</button>
+                        </td>
+                    </tr>
 
-            </table>
+                </table>
+            </div>
             <div class="w-100 text-center m-t-b-30">
                 <a class="btn pagination" href="">Prev</a>
                 <span class="textbtweenpd">12 / 30</span>
@@ -183,7 +203,7 @@
         <div class="w-50 text-center mg-25 message">
             <h3>Do you wan't to delete</h3>
             <p>My First day in kampala ?</p>
-            <div class="w-50 row justify-space-between m-t-b-30">
+            <div class="w-50 row justify-space-between m-t-b-30 toenlarge">
                 <button type="reset" class="btn btn-info" onclick="togglealertdelete()">No</button><button
                     class="btn btn-danger">Yes</button>
             </div>
