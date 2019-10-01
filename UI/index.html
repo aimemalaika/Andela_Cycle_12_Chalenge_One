@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Diary</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body class="content-page">
     <section class="header">
@@ -14,6 +15,21 @@
                 <a href="index.html"><span class="first-child">My</span><span class="last-child">Diary</span></a>
             </div>
             <div class="menu-bar w-70">
+                <ul class="nav-list">
+                    <li><a href="register.html">Sign up</a></li>
+                    <li><a href="login.html">Sign in</a></li>
+                </ul>
+            </div>
+            <div class="nenu-toogle" onclick="togglemenu()">
+                <div class="barsmenu"></div>
+                <div class="barsmenu"></div>
+                <div class="barsmenu"></div>
+            </div>
+        </div>
+    </section>
+    <section id="phone-menu" class="phone-menu hidden">
+        <div class="container">
+            <div class="menu-bar-phone w-100">
                 <ul class="nav-list">
                     <li><a href="register.html">Sign up</a></li>
                     <li><a href="login.html">Sign in</a></li>
@@ -39,5 +55,7 @@
             <p class="w-50 mg-25 footertext">@aimemalaika</p>
         </div>
     </section>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

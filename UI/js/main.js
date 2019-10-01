@@ -31,3 +31,7 @@ const togglealertdelete = () => {
   document.querySelector('#pop-up-delete').classList.toggle('hidden');
   document.querySelector('html').classList.toggle('noscroll');
 }
+
+const togglemenu = () => {
+  document.querySelector('#phone-menu').classList.toggle('hidden');
+}
