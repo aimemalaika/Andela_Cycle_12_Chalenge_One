@@ -140,7 +140,8 @@ a {
 .content-page {
     background-image: url(../images/bg.jpg);
     background-size: cover;
-    /* height: 450px; */
+    height: 100%;
+    background-attachment: fixed;
     background-position: center;
 }
 
@@ -218,6 +219,10 @@ mark {
 
 .body-bg {
     background-image: url(../images/wood.jpg);
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .body-bg::before {
@@ -677,4 +682,15 @@ input:checked+.slider:before {
 .noscroll{
     height: 100%; 
     overflow: hidden;
+}
+
+.barsmenu{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.nenu-toogle{
+    float: right;
+    cursor: pointer;
 }
