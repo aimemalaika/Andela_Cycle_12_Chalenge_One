@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Diary</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body class="body-bg">
@@ -21,35 +22,52 @@
                     <li><a href="login.html">Sign in</a></li>
                 </ul>
             </div>
+            <div class="nenu-toogle" onclick="togglemenu()">
+                <div class="barsmenu"></div>
+                <div class="barsmenu"></div>
+                <div class="barsmenu"></div>
+            </div>
         </div>
     </section>
+
+    <section id="phone-menu" class="phone-menu hidden">
+        <div class="container">
+            <div class="menu-bar-phone w-100">
+                <ul class="nav-list">
+                    <li><a href="register.html">Sign up</a></li>
+                    <li><a href="login.html">Sign in</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
 
     <section class="w-100">
         <div class="container">
             <div id="register" class="login-form p-t-1">
                 <h1 class="text-center text-white text-bold text-uppercase">Register</h1>
                 <form method="post">
-                    <div class="w-50 p-d-inp-log">
+                    <div class="w-50 p-d-inp-log p-d-inp-log-small">
                         <input class="form-input no-outline" placeholder=" " required type="text" name="" id="firstname">
                         <label class="floating-label" for="firstname">First Name</label>
                     </div>
-                    <div class="w-50 p-t-input p-d-inp-log">
+                    <div class="w-50 p-t-input p-d-inp-log p-d-inp-log-small">
                         <input class="form-input no-outline" placeholder=" " required type="text" name="" id="last">
                         <label class="floating-label" for="last">Last Name</label>
                     </div>
-                    <div class="w-50 p-t-input p-d-inp-log">
+                    <div class="w-50 p-t-input p-d-inp-log p-d-inp-log-small">
                         <input class="form-input no-outline" required type="email" placeholder=" " name="" id="email">
                         <label class="floating-label" for="email">Email</label>
                     </div>
-                    <div class="w-50 p-t-input p-d-inp-log">
+                    <div class="w-50 p-t-input p-d-inp-log p-d-inp-log-small">
                         <input class="form-input no-outline" required type="password" placeholder=" " name="" id="password">
                         <label class="floating-label" for="password">Password</label>
                     </div>
-                    <div class="w-50 p-t-input p-d-inp-log">
+                    <div class="w-50 p-t-input p-d-inp-log p-d-inp-log-small">
                         <input class="form-input no-outline" required type="password" placeholder=" " name="" id="password">
                         <label class="floating-label" for="password">Confirm Password</label>
                     </div>
-                    <div class="w-50 p-t-input p-d-inp-log">
+                    <div class="w-50 p-t-input p-d-inp-log p-d-inp-log-small">
                         <label class="checkbox-container">
                             <input type="checkbox" class="no-outline">
                             <span class="checkmark no-outline"></span>
@@ -74,6 +92,8 @@
             </div>
         </div>
     </section>
+
+    <script src="js/main.js"></script>
 
 </body>
 
