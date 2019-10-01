@@ -42,4 +42,7 @@
     .first-child.f-4 {
         font-size: 2.5em !important;
     }
+    .menu-bar li, .menu-bar-phone li {
+        padding: .5rem 0;
+    }
 }
