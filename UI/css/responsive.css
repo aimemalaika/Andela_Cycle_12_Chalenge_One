@@ -74,6 +74,39 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .w-30.rightborder.paddproftab {
+        display: none;
+    }
+    .w-70.profile.paddproftab {
+        width: 100%;
+    }
+    .floating-label.profile {
+        left: 14%;
+    }
+    .top-bar-tab,.top-bar-tab .profmenu{
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    .padprocontent {
+        display: inline-block;
+    }
+    .profmenu{
+        width: 100%;
+        padding: 0;
+    }
+    .top-bar-tab .profmenu{
+        font-size: 1rem;
+    }
+    .totalpost {
+        width: 80%;
+        padding: 15px 20px;
+    }
+    .paddproftab {
+        padding: 0px 2%;
+    }
+}
+
 @media screen and (max-width: 724px) {
     #pop-up-delete .message {
         width: 90%;
