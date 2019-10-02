@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/aime19/Andela_Cycle_12_Chalenge_One.svg?branch=develop)](https://travis-ci.org/aime19/Andela_Cycle_12_Chalenge_One)
 
 
-## My Diary
+### My Diary
 Required Features
 1. Users can create an account and log in.
 2. Users can view all entries to their diary.
