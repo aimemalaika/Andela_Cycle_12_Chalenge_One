@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Diary</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="body-bg">
+    <section class="header">
+        <div class="container row">
+            <div class="web-name w-30">
+                <a href="index.html"><span class="first-child">My</span><span class="last-child">Diary</span></a>
+            </div>
+            <div class="menu-bar w-70">
+                <ul class="nav-list">
+                    <li><a class="active-link" href="newdiary.html">New diary</a></li>
+                    <li><a href="listdiaries.html">List diaries</a></li>
+                    <li><a href="profile.html">Aime Malaika's Profile</a></li>
+                </ul>
+            </div>
+            <div class="nenu-toogle" onclick="togglemenu()">
+                <div class="barsmenu"></div>
+                <div class="barsmenu"></div>
+                <div class="barsmenu"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="phone-menu" class="phone-menu hidden">
+        <div class="container">
+            <div class="menu-bar-phone w-100">
+                <ul class="nav-list">
+                    <li><a class="active-link" href="newdiary.html">New diary</a></li>
+                    <li><a href="listdiaries.html">List diaries</a></li>
+                    <li><a href="profile.html">Aime Malaika's Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100">
+        <div class="container contain-small">
+            <div class="w-70 marg-l-r-15 contentbox-black">
+                <form method="post">
+                    <label for="content">Title <small>no more than 1000 words</small></label>
+                    <input type="text" class="w-100 no-outline form-input m-t-b-10" placeholder="Enter title here ... |" title="type in the title of the diary">
+                    <label for="content">Content <small>no more than 5000 words</small></label>
+                    <textarea id="content" class="w-100 form-input  no-outline" rows="10" placeholder="Enter content here ... |"></textarea>
+                    <div class="w-100 row justify-space-between m-t-b-30">
+                        <button type="reset" class="btn btn-danger" href="">Reset</button><button class="btn btn-info">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="w-100 text-center content-footer relativefooter">
+            <p class="w-50 mg-25 footertext">@aimemalaika</p>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

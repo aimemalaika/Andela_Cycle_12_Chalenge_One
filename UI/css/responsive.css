@@ -1,0 +1,180 @@
+@media screen and (max-width: 1000px) {
+    .hometext {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1083px) {
+    .ptp-5 {
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width: 917px) {
+    .ptp-5 {
+        padding-top: 15%;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .ptp-5 {
+        padding-top: 20%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .ptp-5 {
+        padding-top: 25%;
+    }
+}
+@media screen and (max-width: 624px) {
+    .form-input {
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    .form-input {
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    .form-input {
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .textbtweenpd {
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 358px) {
+    .pagination {
+        margin: 2px;    
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+   .w-hide{
+       display: none;
+   }
+   .w-expend{
+    width: 100%;
+}
+}
+
+
+@media screen and (max-width: 312px) {
+    .form-input {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .w-30.rightborder.paddproftab {
+        display: none;
+    }
+    .w-70.profile.paddproftab {
+        width: 100%;
+    }
+    .floating-label.profile {
+        left: 14%;
+    }
+    .top-bar-tab,.top-bar-tab .profmenu{
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    .padprocontent {
+        display: inline-block;
+    }
+    .profmenu{
+        width: 100%;
+        padding: 0;
+    }
+    .top-bar-tab .profmenu{
+        font-size: 1rem;
+    }
+    .totalpost {
+        width: 80%;
+        padding: 15px 20px;
+    }
+    .paddproftab {
+        padding: 0px 2%;
+    }
+}
+
+@media screen and (max-width: 724px) {
+    #pop-up-delete .message {
+        width: 90%;
+        margin: 0;
+    }
+    #pop-up-delete{
+        top: 20%;
+    }
+    .toenlarge{
+        width: 100%;
+    }
+    .toenlarge .btn{
+        padding: 5px 10px;
+    }
+    .overflowtable{
+        overflow-x: auto;
+    }
+    .contentbox-black {
+        padding: 20px 8px !important;
+    }
+    .contain-small{
+        width: 90%;
+        margin: 5% 3%;
+    }
+    .contentbox-black {
+        padding: 20px 10px;
+        width: 100%;
+        margin: 0;
+    }
+    .p-d-inp-log-small{
+        margin: 0;
+        width: 100%;
+        padding-top: 15%;
+    }
+    .content-footer {
+        position: relative;
+    }
+    #login {
+        margin-top: 37%;
+    }
+    .floating-label {
+        left: 10%;
+    }
+    .form-input:focus+.floating-label {
+        margin-top: -5%;
+    }
+    
+    .form-input:focus+.floating-label,
+    .form-input:valid+.floating-label,
+    .form-input:not(:placeholder-shown)+.floating-label {
+        margin-top: -5%;
+    }
+    .nenu-toogle{
+        display: block;
+    }
+    .menu-bar {
+        display: none;
+    }
+    .web-name.w-30 {
+        width: 80%;
+    }
+    .last-child.f-4 {
+        font-size: 3em !important;
+    }
+    .first-child.f-4 {
+        font-size: 2.5em !important;
+    }
+    .menu-bar li, .menu-bar-phone li {
+        padding: .5rem 0;
+    }
+}
