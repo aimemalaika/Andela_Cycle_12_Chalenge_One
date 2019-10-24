@@ -140,9 +140,9 @@ a {
 .content-page {
     background-image: url(../images/bg.jpg);
     background-size: cover;
-    height: 100%;
     background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .content-page::before {
@@ -213,7 +213,7 @@ mark {
 .content-footer {
     position: absolute;
     left: 0;
-    bottom: 1px;
+    bottom: 0;
 }
 
 .body-bg {
