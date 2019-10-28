@@ -3,6 +3,7 @@
 
 
 ### My Diary
+
 Required Features
 1. Users can create an account and log in.
 2. Users can view all entries to their diary.
