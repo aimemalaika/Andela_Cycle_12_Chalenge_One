@@ -140,9 +140,9 @@ a {
 .content-page {
     background-image: url(../images/bg.jpg);
     background-size: cover;
+    height: 100%;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
 .content-page::before {
@@ -213,12 +213,13 @@ mark {
 .content-footer {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 1px;
 }
 
 .body-bg {
     background-image: url(../images/wood.jpg);
-    background-attachment: fixed;
+    background-size: inherit;
+    background-repeat: repeat;
     background-position: center;
 }
 
@@ -268,6 +269,7 @@ mark {
     border-radius: 5px;
     padding: 10px 5px;
     color: #ffffffff;
+    line-height: 1.5;
 }
 
 .no-outline {

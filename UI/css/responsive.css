@@ -108,6 +108,10 @@
 }
 
 @media screen and (max-width: 724px) {
+    .container{
+        width: 98% !important;
+        margin: 0 !important;
+    }
     #pop-up-delete .message {
         width: 90%;
         margin: 0;
