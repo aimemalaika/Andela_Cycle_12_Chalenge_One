@@ -218,8 +218,6 @@ mark {
 
 .body-bg {
     background-image: url(../images/wood.jpg);
-    background-size: cover;
-    height: 100%;
     background-attachment: fixed;
     background-position: center;
 }
