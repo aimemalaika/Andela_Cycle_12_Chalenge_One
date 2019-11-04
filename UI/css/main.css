@@ -651,10 +651,10 @@ input:checked+.slider:before {
 .contentbox p{
     font-size: 1.2em;
     line-height: 1.7;
-    border: 3px solid gray;
+    /* border: 3px solid gray; */
     padding: 10px 40px;
-    height: 500px;
-    overflow-y: scroll;
+    /* height: 500px; */
+    /* overflow-y: scroll; */
     text-align: justify;
     color: #fff;
 }
